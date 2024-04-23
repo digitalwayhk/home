@@ -343,7 +343,10 @@
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-      if (window.location.hostname === "digitalway.hk") {
+      if (
+        window.location.hostname === "digitalway.hk" ||
+        window.location.hostname === "www.digitalway.hk"
+      ) {
         history.pushState({}, "", "/");
       }
       function getOffSet() {
